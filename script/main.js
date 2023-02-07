@@ -1,6 +1,16 @@
 
 
-const prenoms = ["Christopher", "Christian", "Raphael", "Ryan", "Amaury"];
+let prenoms = ["Christopher","Christian","Raphael","Ryan", "Amaury"];
+
+let result = prenoms.sort((a, b) => {
+  if (a[0] === "R") return -1;
+  if (b[0] === "R") return 1;
+  return 0;
+});
+
+console.log(result);
+
+
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 const addBeginningBtn = document.getElementById("add-beginning");
