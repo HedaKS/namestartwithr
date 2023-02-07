@@ -16,10 +16,10 @@ const input = document.getElementById("input");
 const addBeginningBtn = document.getElementById("add-beginning");
 const addEndBtn = document.getElementById("add-end");
 
-prenoms.forEach((prenom) => {
+result.forEach((result) => {
   const item = document.createElement("div");
   item.classList.add("item");
-  item.innerHTML = prenom;
+  item.innerHTML = result;
   list.appendChild(item);
 });
 
